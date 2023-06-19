@@ -26,7 +26,7 @@ module Tb_ALU_8_Bit;
  reg[3:0] ALU_Sel;
 
 //Outputs
- wire[7:0] ALU_Out;
+     wire[15:0] ALU_Out;
  wire CarryOut;
  // Verilog code for ALU
  integer i;
