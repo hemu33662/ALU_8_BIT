@@ -46,7 +46,7 @@ module Tb_ALU_8_Bit;
       
          for (i=4'b0;i<=4'b1111;i=i+1)
       begin
-       ALU_Sel = ALU_Sel + i;
+       ALU_Sel =  i;
        #10;
       end
     end
