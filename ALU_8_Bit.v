@@ -23,10 +23,10 @@
 module ALU_8_Bit(
      input [7:0] A,B,  // ALU 8-bit Inputs                 
      input [3:0] ALU_Sel,// ALU Selection
-     output [7:0] ALU_Out, // ALU 8-bit Output
+     output [15:0] ALU_Out, // ALU 8-bit Output
      output CarryOut // Carry Out Flag
     );
-    reg [7:0] ALU_Result;
+     reg [15:0] ALU_Result;
     wire [8:0] tmp;
     assign ALU_Out = ALU_Result; // ALU out
     assign tmp = {1'b0,A} + {1'b0,B};
